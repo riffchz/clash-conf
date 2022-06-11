@@ -248,13 +248,6 @@ rules:
 - PROCESS-NAME,ss-local,DIRECT
 - PROCESS-NAME,privoxy,DIRECT
 - PROCESS-NAME,leaf,DIRECT
-- PROCESS-NAME,v2ray.exe,DIRECT
-- PROCESS-NAME,xray.exe,DIRECT
-- PROCESS-NAME,naive.exe,DIRECT
-- PROCESS-NAME,trojan.exe,DIRECT
-- PROCESS-NAME,trojan-go.exe,DIRECT
-- PROCESS-NAME,ss-local.exe,DIRECT
-- PROCESS-NAME,privoxy.exe,DIRECT
 - DST-PORT,22,DIRECT,no-resolve
 - RULE-SET,rule_BlockAds,REJECT
 - RULE-SET,rule_reject,REJECT
@@ -369,7 +362,7 @@ rule-providers:
   rule_telegramcidr:
     type: http
     behavior: ipcidr
-    url: https://raw.githubusercontent.com/riffchz/clash-conf/main/rule/sosmed/rule_telegramcidr.txt
+    url: https://raw.githubusercontent.com/riffchz/clash-conf/main/rule/sosmed/rule_telegramcidr.yaml
     path: "./rule_telegramcidr.yaml"
     interval: 86400
   rule_telegram:
@@ -377,12 +370,6 @@ rule-providers:
     behavior: domain
     url: https://raw.githubusercontent.com/riffchz/clash-conf/main/rule/sosmed/rule_telegram.yaml
     path: "./rule_telegram.yaml"
-    interval: 86400
-  rule_disneyplus:
-    type: http
-    behavior: domain
-    url: https://rules.kr328.app/disney.yaml
-    path: "./rule_disneyplus.yaml"
     interval: 86400
   rule_games:
     type: http
