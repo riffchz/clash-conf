@@ -1,0 +1,17 @@
+proxies:
+- name: SOSMED-1
+  server: 
+  port: 
+  type: 
+  uuid: 
+  alterId: 
+  cipher: 
+  tls: 
+  skip-cert-verify: 
+  servername: 
+  network: ws
+  ws-opts:
+    path: 
+    headers:
+      Host: 
+  udp: true
