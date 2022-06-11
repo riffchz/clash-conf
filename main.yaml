@@ -249,7 +249,8 @@ rules:
 - PROCESS-NAME,privoxy,DIRECT
 - PROCESS-NAME,leaf,DIRECT
 - DST-PORT,22,DIRECT,no-resolve
-- RULE-SET,rule_BlockAds,REJECT
+- RULE-SET,rule_BlockAdsMatrix,REJECT
+- RULE-SET,rule_adsBlock,REJECT
 - RULE-SET,rule_reject,REJECT
 - RULE-SET,rule_basicads,REJECT
 - RULE-SET,rule_porn,REJECT
@@ -323,18 +324,24 @@ rule-providers:
     path: "./rule_gaming.yaml"
     url: https://raw.githubusercontent.com/riffchz/clash-conf/main/rule/game/rule_gaming.yaml
     interval: 86400
-  rule_BlockAds:
-    type: http
-    behavior: classical
-    path: "./rule_BlockAds.yaml"
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Advertising/Advertising_Classical.yaml
-    interval: 86400
   rule_reject:
     type: http
     behavior: domain
     url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/reject.txt
     path: "./rule_reject.yaml"
     interval: 86400
+  rule_BlockAdsMatrix:
+    type: http
+    behavior: classical
+    path: "./rule_BlockAds.yaml"
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Advertising/Advertising_Classical.yaml
+    interval: 14400
+  rule_adsBlock:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/hillz2/openclash_adblock/main/energized_blu_adblock.yaml
+    path: "./energized_blu_adblock.yaml"
+    interval: 14400
   rule_basicads:
     type: http
     behavior: classical
