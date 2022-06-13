@@ -1,0 +1,39 @@
+on:
+  schedule:
+    - cron: '30 * * * *'
+  workflow_dispatch:
+
+permissions: write-all
+
+defaults:
+  run:
+    shell: bash
+    working-directory: ./
+
+jobs:
+  build:
+    env:
+      SUCC: 0
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Download antizapret pac file
+      run: |
+        echo $SUCC
+        mkdir -p conf
+        curl -L --compressed -o 'proxy.pac' 'https://antizapret.prostovpn.org/proxy.pac' || echo "SUCC=1" >> $GITHUB_ENV
+        awk -f ./AdsBlock-AutoUpdate/scripts/antizapret2clash.awk ./proxy.pac | sort -bk2 -o ./AdsBlock-AutoUpdate/conf/rules_azd.yaml
+        rm ./proxy.pac
+    - name: Commit files # transfer the new html files back into the repository
+      if: ${{ env.SUCC == 0 }}
+      run: |
+        git config --local user.name "ghactions"
+        git add ./AdsBlock-AutoUpdate/conf
+        git commit -m "Updating rules" || echo "SUCC=1" >> $GITHUB_ENV
+    - name: Push changes # push the output folder to your repo
+      if: ${{ env.SUCC == 0 }}
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        force: true
+ 
