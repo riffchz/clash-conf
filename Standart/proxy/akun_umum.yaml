@@ -1,0 +1,16 @@
+proxies:
+- name: UMUM-1
+  type: vmess
+  server: isiserver #Isi Server
+  port: 443
+  uuid: isiuuid/password #Isi Uuid/pass
+  alterId: 0
+  cipher: auto
+  udp: true
+  skip-cert-verify: true
+  tls: true
+  servername: isibug #Isi Bug
+  network: ws
+  ws-opts:
+    path: "/isipath/" #Isi Path Vmess WS
+###Jika ingin Menambah Akun tinggal Copy Format Diatas Dibawah Ini####

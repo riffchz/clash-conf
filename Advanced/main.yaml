@@ -277,44 +277,44 @@ rule-providers:
   rule_Direct:
     type: http
     behavior: classical
-    url: https://raw.githubusercontent.com/riffchz/clash-conf/main/rule/rule_direct.yaml
+    url: https://raw.githubusercontent.com/riffchz/clash-conf/main/Advanced/rule/rule_direct.yaml
     path: "./rule_direct.yaml"
     interval: 86400
   rule_umum:
     type: http
     behavior: classical
     path: "./rule_umum.yaml"
-    url: https://raw.githubusercontent.com/riffchz/clash-conf/main/rule/rule_umum.yaml
+    url: https://raw.githubusercontent.com/riffchz/clash-conf/main/Advanced/rule/rule_umum.yaml
     interval: 86400
   rule_portgames:
     type: http
     behavior: classical
     path: "./rule_portgames.yaml"
-    url: https://raw.githubusercontent.com/riffchz/clash-conf/main/rule/game/rule_portgames.yaml
+    url: https://raw.githubusercontent.com/riffchz/clash-conf/main/Advanced/rule/game/rule_portgames.yaml
     interval: 86400
   rule_Indo:
     type: http
     behavior: classical
     path: "./rule_Indo.yaml"
-    url: https://raw.githubusercontent.com/riffchz/clash-conf/main/rule/rule_Indo.yaml
+    url: https://raw.githubusercontent.com/riffchz/clash-conf/main/Advanced/rule/rule_Indo.yaml
     interval: 86400
   rule_Sosmed:
     type: http
     behavior: classical
     path: "./rule_sosmed.yaml"
-    url: https://raw.githubusercontent.com/riffchz/clash-conf/main/rule/sosmed/rule_sosmed.yaml
+    url: https://raw.githubusercontent.com/riffchz/clash-conf/main/Advanced/rule/sosmed/rule_sosmed.yaml
     interval: 86400
   rule_Streaming:
     type: http
     behavior: classical
     path: "./rule_streaming.yaml"
-    url: https://raw.githubusercontent.com/riffchz/clash-conf/main/rule/stream/rule_streaming.yaml
+    url: https://raw.githubusercontent.com/riffchz/clash-conf/main/Advanced/rule/stream/rule_streaming.yaml
     interval: 86400
   rule_Gaming:
     type: http
     behavior: classical
     path: "./rule_gaming.yaml"
-    url: https://raw.githubusercontent.com/riffchz/clash-conf/main/rule/game/rule_gaming.yaml
+    url: https://raw.githubusercontent.com/riffchz/clash-conf/main/Advanced/rule/game/rule_gaming.yaml
     interval: 86400
   rule_reject:
     type: http
@@ -337,7 +337,7 @@ rule-providers:
   rule_basicads:
     type: http
     behavior: classical
-    url: https://raw.githubusercontent.com/riffchz/clash-conf/main/rule/reject/rule_basicads.yaml
+    url: https://raw.githubusercontent.com/riffchz/clash-conf/main/Advanced/rule/reject/rule_basicads.yaml
     path: "./rule_basicads.yaml"
     interval: 86400
   rule_porn:
@@ -349,73 +349,73 @@ rule-providers:
   rule_nsfw:
     type: http
     behavior: classical
-    url: https://raw.githubusercontent.com/riffchz/clash-conf/main/rule/reject/rule_nsfw.yaml
+    url: https://raw.githubusercontent.com/riffchz/clash-conf/main/Advanced/rule/reject/rule_nsfw.yaml
     path: "./rule_nsfw.yaml"
     interval: 86400
   rule_lancidr:
     type: http
     behavior: ipcidr
-    url: https://raw.githubusercontent.com/riffchz/clash-conf/main/rule/rule_lancidr.yaml
+    url: https://raw.githubusercontent.com/riffchz/clash-conf/main/Advanced/rule/rule_lancidr.yaml
     path: "./rule_lancidr.yaml"
     interval: 86400
   rule_telegramcidr:
     type: http
     behavior: ipcidr
-    url: https://raw.githubusercontent.com/riffchz/clash-conf/main/rule/sosmed/rule_telegramcidr.yaml
+    url: https://raw.githubusercontent.com/riffchz/clash-conf/main/Advanced/rule/sosmed/rule_telegramcidr.yaml
     path: "./rule_telegramcidr.yaml"
     interval: 86400
   rule_telegram:
     type: http
     behavior: domain
-    url: https://raw.githubusercontent.com/riffchz/clash-conf/main/rule/sosmed/rule_telegram.yaml
+    url: https://raw.githubusercontent.com/riffchz/clash-conf/main/Advanced/rule/sosmed/rule_telegram.yaml
     path: "./rule_telegram.yaml"
     interval: 86400
   rule_games:
     type: http
     behavior: domain
-    url: https://raw.githubusercontent.com/riffchz/clash-conf/main/rule/game/rule_games.yaml
+    url: https://raw.githubusercontent.com/riffchz/clash-conf/main/Advanced/rule/game/rule_games.yaml
     path: "./rule_games.yaml"
     interval: 86400
   rule_iqiyi:
     type: http
     behavior: domain
-    url: https://raw.githubusercontent.com/riffchz/clash-conf/main/rule/stream/iqiyi.yaml
+    url: https://raw.githubusercontent.com/riffchz/clash-conf/main/Advanced/rule/stream/iqiyi.yaml
     path: "./rule_iqiyi.yaml"
     interval: 86400
   rule_line:
     type: http
     behavior: domain
-    url: https://raw.githubusercontent.com/riffchz/clash-conf/main/rule/sosmed/rule_line.yaml
+    url: https://raw.githubusercontent.com/riffchz/clash-conf/main/Advanced/rule/sosmed/rule_line.yaml
     path: "./rule_line.yaml"
     interval: 86400
   rule_netflix:
     type: http
     behavior: domain
-    url: https://raw.githubusercontent.com/riffchz/clash-conf/main/rule/stream/rule_netflix.yaml
+    url: https://raw.githubusercontent.com/riffchz/clash-conf/main/Advanced/rule/stream/rule_netflix.yaml
     path: "./rule_netflix.yaml"
     interval: 86400
   rule_tiktok:
     type: http
     behavior: domain
-    url: https://raw.githubusercontent.com/riffchz/clash-conf/main/rule/sosmed/rule_tiktok.yaml
+    url: https://raw.githubusercontent.com/riffchz/clash-conf/main/Advanced/rule/sosmed/rule_tiktok.yaml
     path: "./rule_tiktok.yaml"
     interval: 86400
   rule_twitch:
     type: http
     behavior: domain
-    url: https://raw.githubusercontent.com/riffchz/clash-conf/main/rule/stream/rule_twitch.yaml
+    url: https://raw.githubusercontent.com/riffchz/clash-conf/main/Advanced/rule/stream/rule_twitch.yaml
     path: "./rule_twitch.yaml"
     interval: 86400
   rule_twitter:
     type: http
     behavior: domain
-    url: https://raw.githubusercontent.com/riffchz/clash-conf/main/rule/sosmed/rule_twitter.yaml
+    url: https://raw.githubusercontent.com/riffchz/clash-conf/main/Advanced/rule/sosmed/rule_twitter.yaml
     path: "./rule_twitter.yaml"
     interval: 86400
   rule_Youtube:
     type: http
     behavior: domain
-    url: https://raw.githubusercontent.com/riffchz/clash-conf/main/rule/stream/rule_Youtube.yaml
+    url: https://raw.githubusercontent.com/riffchz/clash-conf/main/Advanced/rule/stream/rule_Youtube.yaml
     path: "./rule_Youtube.yaml"
     interval: 86400
-ipv6: true
+ipv6: false
